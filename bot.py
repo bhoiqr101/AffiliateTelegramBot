@@ -16,10 +16,10 @@ logging.getLogger('telegram').setLevel(logging.WARNING)
 logging.getLogger('httpx').setLevel(logging.WARNING)
 
 # Read env variables
-TOKEN = os.environ['TOKEN']
+TOKEN = os.environ['5207031592:AAEqfklpEGOevRuDVSe6uRHcdrKc4V40ius']
 DEV_CHAT_ID = os.environ['DEV_CHAT_ID'] if 'DEV_CHAT_ID' in os.environ else None
-search_url = os.environ['search_url'] 
-affiliate_tag = os.environ['affiliate_tag']
+search_url = os.environ['amazon.in'] 
+affiliate_tag = os.environ['sr1122-21']
 
 # Filtered URL schemes: dp/ASIN, gp/product/ASIN and gp/aw/d/ASIN
 PRODUCT_PATTERN_CODE = re.compile(r'(?:dp\/[\w]*)|(?:gp\/product\/[\w]*)|(?:gp\/aw\/d\/[\w]*)')
